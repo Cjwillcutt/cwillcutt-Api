@@ -1,6 +1,6 @@
-from flask import Flask, request, jsonify
-from flask_cors import CORS
 import joblib
+from flask import Flask, jsonify, request
+from flask_cors import CORS
 
 app = Flask(__name__)
 CORS(app)
@@ -15,7 +15,7 @@ def home():
     return (
         "<h1>Salary Prediction API</h1>"
         "<p>BAIS:3300 - Digital Product Development</p>"
-        "<p>Mike Colbert</p>"
+        "<p>Chris Willcutt</p>"
     )
 
 
